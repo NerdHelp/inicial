@@ -6,11 +6,7 @@
   <title>NerdHelp - Soluções em TI</title>
   <link rel="icon" type="image/png" href="inicial/banana.png">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,9 +24,7 @@
       position: relative;
     }
 
-    header img {
-      height: 50px;
-    }
+    header img { height: 50px; }
 
     nav {
       display: flex;
@@ -87,7 +81,7 @@
     }
 
     .hero {
-      text-align:center;
+      text-align: center;
       margin-bottom: 60px;
     }
 
@@ -110,26 +104,30 @@
       margin-top: 60px;
     }
 
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      z-index: 99;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
     @media (max-width: 768px) {
-      nav {
-        display: none;
-      }
-
-      .menu-toggle {
-        display: flex;
-      }
-
-      .mobile-menu.show {
-        display: flex;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .container {
-        padding: 20px;
-      }
+      nav { display: none; }
+      .menu-toggle { display: flex; }
+      .mobile-menu.show { display: flex; }
+      .hero h1 { font-size: 2rem; }
+      .container { padding: 20px; }
     }
   </style>
 </head>
@@ -140,7 +138,6 @@
       <img src="banana.png" alt="Logo NerdHelp">
     </div>
 
-    <!-- Menu padrão para desktop -->
     <nav class="desktop-menu">
       <a href="https://nerdhelp.github.io/inicial/">Início</a>
       <a href="https://nerdhelp.github.io/servi-os/">Serviços</a>
@@ -148,14 +145,10 @@
       <a href="https://nerdhelp.github.io/contato/">Contato</a>
     </nav>
 
-    <!-- Botão de menu hamburguer -->
     <div class="menu-toggle" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
+      <div></div><div></div><div></div>
     </div>
 
-    <!-- Menu mobile que aparece ao clicar -->
     <div class="mobile-menu" id="mobileMenu">
       <a href="https://nerdhelp.github.io/inicial/">Início</a>
       <a href="https://nerdhelp.github.io/servi-os/">Serviços</a>
@@ -172,33 +165,23 @@
 
     <section>
       <h2>Quem somos</h2>
-      <p style="text-align: justify,center;">
+      <p style="text-align: justify;">
         Meu nome é Kauan Turra, apaixonado por tecnologia e criador da NerdHelp. Nosso objetivo é oferecer soluções práticas, acessíveis e eficientes para quem precisa de suporte com tecnologia, desde a criação de sites até a manutenção de computadores.
       </p>
     </section>
 
     <section style="margin-top: 30px;">
-      <h2>O que fazemos</h2>
+      <h2>Principais serviços</h2>
       <ul style="margin-top: 10px; line-height: 1.6;">
-        <li>✅ Criação de sites responsivos (que funcionam bem no celular, tablet e PC)</li>
-        <li>✅ Desenvolvimento de landing pages para divulgação de produtos ou serviços</li>
-        <li>✅ Portfólios personalizados para designers, fotógrafos, artistas, etc</li>
-        <li>✅ Sistemas de login e cadastro (com front-end completo)</li>
-        <li>✅ Dashboards administrativos com tabelas, filtros e cards de informações</li>
-        <li>✅ Formulários com validação e interatividade (tipo orçamento, contatos, pedidos)</li>
-        <li>✅ Simuladores de planos, preços ou serviços (com lógica e feedback visual)</li>
-        <li>✅ Interfaces para sistemas (ex: controle de estoque, agendamentos, pedidos)</li>
-        <li>✅ Sites com animações e efeitos visuais (scroll suave, transições, hover, etc)</li>
-        <li>✅ Páginas de apresentação para negócios locais (ex: barbearia, loja, salão, etc)</li>
-        <li>✅ Catálogos online de produtos ou serviços (estilo vitrine)</li>
-        <li>✅ Criação e publicação de sites no GitHub Pages ou domínio próprio</li>
-        <li>✅ Melhorias em sites prontos (visual, organização, performance e responsividade)</li>
-        <li>✅ Personalização de temas para WordPress ou criadores de site (Wix, etc)</li>
-        <li>✅ Otimização de layout e acessibilidade para sites antigos</li>
+        <li>✅ Criação de sites modernos e responsivos</li>
+        <li>✅ Landing pages com foco em conversão</li>
+        <li>✅ Portfólios personalizados e vitrines online</li>
+        <li>✅ Dashboards administrativos e sistemas web</li>
+        <li>✅ Formulários interativos e animados</li>
       </ul>
+      <a href="https://nerdhelp.github.io/servi-os/" style="display:inline-block; margin-top:15px; color: #007bff; font-weight: bold;">➤ Ver todos os serviços</a>
     </section>
 
-    <!-- Planos com preços -->
     <section class="home-planos" style="margin-top: 40px; text-align: center;">
       <h2 style="color: #1e293b;">💸 Planos acessíveis para seu site</h2>
       <p style="margin-bottom: 30px;">Sites profissionais com preço justo e entrega rápida!</p>
@@ -229,9 +212,9 @@
         📲 Solicitar orçamento no WhatsApp
       </a>
     </section>
-    <!-- Fim dos planos -->
-
   </div>
+
+  <a href="https://wa.me/5511950624277" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">📱</a>
 
   <footer>
     © 2025 NerdHelp. Todos os direitos reservados.
